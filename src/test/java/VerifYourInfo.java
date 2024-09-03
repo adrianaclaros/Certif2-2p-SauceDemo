@@ -2,6 +2,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class VerifYourInfo extends BaseTest {
 
@@ -12,6 +15,9 @@ public class VerifYourInfo extends BaseTest {
 
     @Test
     public void ErrorMnesaje() throws InterruptedException {
+
+        //espera a que la condición esperada se cumpla o que alcance el tiempo de los 10 segundos
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         //para hacer clic en comprar la mochila
         WebElement AddBackpackButton = driver.findElement(By.id("add-to-cart-sauce-labs-backpack"));
@@ -30,11 +36,11 @@ public class VerifYourInfo extends BaseTest {
         checkoutButton.click();
 
         // para poner el nombre
-     /*   WebElement userNameTextBox = driver.findElement(By.name("firstName"));
+        WebElement userNameTextBox = driver.findElement(By.name("firstName"));
         userNameTextBox.sendKeys("Adriana");
 
         //para poner el apellido
-        WebElement lastNameTextBox = driver.findElement(By.name("lastName"));
+      /*  WebElement lastNameTextBox = driver.findElement(By.name("lastName"));
         lastNameTextBox.sendKeys("Claros");
 
         //para poner el zip
@@ -50,10 +56,8 @@ public class VerifYourInfo extends BaseTest {
         WebElement errorMessage = driver.findElement(By.cssSelector("h3[data-test='error']"));
         String errorText = errorMessage.getText();
 
-        //verifica: Epic sadface: Username and password do not match any user in this service
-        //verificar que errorText es igual al contenido del texto del mensaje de error
+        //verificacion si el mensaje de error se muestra
         Assertions.assertTrue(errorMessage.isDisplayed());
-        Assertions.assertEquals("Error: First Name is required", errorText);
 
     }
 

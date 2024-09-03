@@ -15,7 +15,7 @@ public class VerifCantidadCompras extends BaseTest {
     //              el icono del carrito coincida con la cantidad de productos agregados
 
     @Test
-    public void CantidadCompras() throws InterruptedException {
+    public void CantidadCompras() {
 
         //para hacer clic en comprar la mochila
         WebElement AddBackpackButton = driver.findElement(By.id("add-to-cart-sauce-labs-backpack"));
