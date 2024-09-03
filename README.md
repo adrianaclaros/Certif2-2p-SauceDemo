@@ -38,7 +38,7 @@ Este proyecto tiene la función de automatizar un conjunto de pruebas para valid
 Para ejecutar los test:
 1. Navega a: **Proyecto2P-SauceDemo > src > test > java**
 
-2. Haz clic derecho sobre el test que deseas ejecutar y selecciona **"Run 'NombreDelTest'"**.
+2. Haz clic derecho sobre el test que deseas ejecutar y selecciona **Run 'NombreDelTest'**.
 
 3. IntelliJ IDEA compilará el proyecto y ejecutará el archivo seleccionado.
 
