@@ -4,9 +4,9 @@ Este proyecto tiene la función de automatizar un conjunto de pruebas para valid
 
 ### Requisitos Previos
 
-1. Descarga e instala la última versión de Java Development Kit (JDK) desde la página oficial de Oracle: https://www.oracle.com/java/technologies/downloads/
+- Descarga e instala la última versión de Java Development Kit (JDK) desde la página oficial de Oracle: https://www.oracle.com/java/technologies/downloads/
 
-2. Descarga e instala IntelliJ IDEA Community Edition desde la página oficial de JetBrains: https://www.jetbrains.com/idea/download/?section=windows
+- Descarga e instala IntelliJ IDEA Community Edition desde la página oficial de JetBrains: https://www.jetbrains.com/idea/download/?section=windows
 
 
 ### Pasos para Ejecutar el Proyecto
