@@ -49,6 +49,7 @@ public class VerifOrdenamientoAtoZ extends BaseTest {
 
         //verifica si esta ordenado de menor a mayor (A - Z)
         boolean isSorted = Ordering.natural().isOrdered(actualProductsOrder);
+       // boolean isSorted = Ordering.natural().reverse().isOrdered(actualProductsOrder);   //verifica si el ordenamiento de de Z - A
         Assertions.assertTrue(isSorted);
 
     }
